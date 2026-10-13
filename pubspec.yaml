@@ -1,5 +1,5 @@
 
-name: video_app
+name: cat
 description: Embedded video application.
 publish_to: 'none'
 
@@ -12,6 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   video_player: ^2.10.0
+  video_player_win: ^3.3.0
   window_manager: ^0.5.1
 
 dev_dependencies:

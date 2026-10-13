@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:video_player/video_player.dart';
 import 'package:window_manager/window_manager.dart';
+import 'package:video_player_win/video_player_win.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,7 +16,7 @@ Future<void> main() async {
     await windowManager.ensureInitialized();
 
     const windowOptions = WindowOptions(
-      title: 'Video App',
+      title: '月薪貓2',
       backgroundColor: Colors.white,
       center: true,
     );
