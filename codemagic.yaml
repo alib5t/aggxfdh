@@ -1,22 +1,20 @@
 
 workflows:
-  ios-unsigned:
-    name: iOS Unsigned APP
+  android-apk:
+    name: Android APK Build
     max_build_duration: 120
     instance_type: mac_mini_m2
 
     environment:
       flutter: stable
       xcode: 26.5
-    
 
     scripts:
-      - name: Get Flutter packages
+      - name: Get dependencies
         script: flutter pub get
 
-      - name: Build unsigned iOS app
-        script: flutter build ios --debug --no-codesign
+      - name: Build release APK
+        script: flutter build apk --release
 
     artifacts:
-      - build/ios/iphoneos/**/*.app
-      - /tmp/xcodebuild_logs/*.log
+      - build/app/outputs/flutter-apk/*.apk
