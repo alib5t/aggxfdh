@@ -7,7 +7,8 @@ workflows:
 
     environment:
       flutter: stable
-      xcode: latest
+      xcode: 26.5
+    
 
     scripts:
       - name: Get Flutter packages
