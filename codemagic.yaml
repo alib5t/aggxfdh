@@ -1,4 +1,4 @@
-```yaml
+
 workflows:
   android-apk:
     name: Flutter APK with Xcode
@@ -18,4 +18,3 @@ workflows:
 
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
-```
